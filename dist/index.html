@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="input-div">
+            <input type="text" id="ingredient-input" placeholder="What's the ingredient name?"><br>
+            <button id="btn"> GET Recipes</button>
+        </div>
+        <div class="data-div" >
+             
+        </div>
+    </div>
+    <script id="recipes-template" type="text/x-handlebars-template">
+         
+        {{#each recipesFinalData}}
+          <div class="recipe-div">
+           
+                <a href= "{{href}}"> {{ title }} </a>
+    
+                <button class="img-btn">
+                    <img class="photoHolder" src="{{ thumbnail }}" alt="No Relevant Photo Found">
+                </button>
+
+                {{#each ingredients}}
+                    <p>{{ this }}</p>
+                {{/each}}
+          </div>
+            
+          {{/each}}
+      
+      </script>
+
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    <script src="renderer.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+    body {
+    background-color: grey;
+  }
+  .mainDiv {
+    background-color: #f8f8ff;
+    margin: 30px;
+    padding-top: 2px;
+  }
+
+  .data-div {
+    background-color: #f8f8ff;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 30px;
+    padding: 10px;
+    position: absolute;
+  }
+  .recipe-div {
+    display: grid;
+    /* height: 100px; */
+    background-color: #ff8c00;
+    text-align: center;
+    align-content: center;
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  
+  .photoHolder {
+    background-color: #f8f8ff;
+  }
+  
