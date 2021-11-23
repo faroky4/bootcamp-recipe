@@ -8,7 +8,7 @@ $('#btn').on('click',function(){
     })
 })
 $(document).on('click','.img-btn',function() {
-    let relevantInputValue = $(this).closest("recipe-div").find(".img-btn").attr("ingresients")
+    let relevantInputValue = $(this).closest(".recipe-div").find("p")[0].innerHTML
     //let currImg = relevantInputValue.getAttribute
     alert(relevantInputValue)
 })
