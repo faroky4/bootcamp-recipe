@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
@@ -20,12 +20,12 @@
     <script id="recipes-template" type="text/x-handlebars-template">
          
         {{#each recipesFinalData}}
-          <div class="recipe-div">
+          <div class="recipe-div" >
            
                 <a href= "{{href}}"> {{ title }} </a>
     
-                <button class="img-btn">
-                    <img class="photoHolder" src="{{ thumbnail }}" alt="No Relevant Photo Found">
+                <button class="img-btn" data-ingresients="{{ingredients}}">
+                    <img class="photoHolder" src="{{ thumbnail }}" alt="No Relevant Photo Found" >
                 </button>
 
                 {{#each ingredients}}

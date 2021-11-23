@@ -1,12 +1,15 @@
     body {
     background-color: grey;
+    width: 100%;
   }
   .mainDiv {
     background-color: #f8f8ff;
     margin: 30px;
     padding-top: 2px;
   }
-
+.container {
+    width: 100%;
+}
   .data-div {
     background-color: #f8f8ff;
     text-align: center;
